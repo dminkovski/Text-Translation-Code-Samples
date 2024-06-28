@@ -1,0 +1,28 @@
+{
+  "name": "microsoft-translator-samples",
+  "version": "3.0.0",
+  "description": "This repository includes Node.js/JavaScript code samples for Microsoft Translator.",
+  "main": "BreakSentence.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicrosoftTranslator/Text-Translation-Code-Samples.git#main"
+  },
+  "keywords": [
+    "Text",
+    "Translation",
+    "AI"
+  ],
+  "author": "Microsoft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MicrosoftTranslator/Text-Translation-Code-Samples/issues"
+  },
+  "homepage": "https://github.com/MicrosoftTranslator/Text-Translation-Code-Samples/tree/main#readme",
+  "dependencies": {
+    "request": "^2.88.2",
+    "uuid": "^10.0.0"
+  }
+}

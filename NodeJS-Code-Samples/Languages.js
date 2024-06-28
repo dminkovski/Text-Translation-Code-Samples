@@ -4,7 +4,7 @@ retrieve a list of languages supported by Microsoft Translator. */
 /* This template relies on the request module, a simplified and user friendly
 way to make HTTP requests. */
 const request = require('request');
-const uuidv4 = require('uuid/v4');
+const { v4: uuidv4 } = require('uuid');
 
 var endpoint_var = 'TRANSLATOR_TEXT_ENDPOINT';
 if (!process.env[endpoint_var]) {
@@ -24,7 +24,7 @@ function getLanguages(){
         },
         headers: {
           'Content-type': 'application/json',
-          'X-ClientTraceId': uuidv4().toString()
+          'X-ClientTraceId': uuidv4()
         },
         json: true,
     };

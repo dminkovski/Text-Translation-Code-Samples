@@ -4,7 +4,7 @@ how terms in a dictionary are contexutalized. */
 /* This template relies on the request module, a simplified and user friendly
 way to make HTTP requests. */
 const request = require('request');
-const uuidv4 = require('uuid/v4');
+const { v4: uuidv4 } = require('uuid');
 
 var key_var = 'TRANSLATOR_TEXT_RESOURCE_KEY';
 if (!process.env[key_var]) {
@@ -40,7 +40,7 @@ function dictionaryExamples(){
           'Ocp-Apim-Subscription-Key': resourceKey,
           'Ocp-Apim-Subscription-Region': region,
           'Content-type': 'application/json',
-          'X-ClientTraceId': uuidv4().toString()
+          'X-ClientTraceId': uuidv4()
         },
         body: [{
             'text': 'great',

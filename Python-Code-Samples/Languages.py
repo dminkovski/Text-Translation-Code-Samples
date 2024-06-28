@@ -8,6 +8,8 @@
 # Run: pip install requests uuid
 
 import os, requests, uuid, json
+from dotenv import load_dotenv
+load_dotenv()
 
 endpoint_var_name = 'TRANSLATOR_TEXT_ENDPOINT'
 if not endpoint_var_name in os.environ:

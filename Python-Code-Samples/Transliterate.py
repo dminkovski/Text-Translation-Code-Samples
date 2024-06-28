@@ -9,6 +9,8 @@
 # Run: pip install requests uuid
 
 import os, requests, uuid, json
+from dotenv import load_dotenv
+load_dotenv()
 
 key_var_name = 'TRANSLATOR_TEXT_RESOURCE_KEY'
 if not key_var_name in os.environ:
